@@ -1,0 +1,49 @@
+body {
+    background: #fff;
+    /* background: url(./img/Simbolo_de_konoha.jpg)no-repeat center/cover; */
+}
+
+.earth {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin:auto;
+}
+
+.dino {
+    background-image: url(./img/945d92f8edde5a58e9b2185e3727353e.gif);
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+}
+
+
+@keyframes jump {
+    0% {top:150px;}
+    30% {top:130px;}
+    50%{top: 80px;}
+    80% {top:130px;}
+    100% {top:150px;}
+}
+
+.animate {
+    animation: jump 300ms linear;
+}
+
+.sakura {
+    width: 20px;
+    height: 40px;
+    background-image: url(./img/sakura.jpg);
+    background-size: 20px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: sakura 2s infinite linear;
+}
+
+@keyframes sakura {
+    0% {left: 580px}
+    100% {left: -20px}
+}
